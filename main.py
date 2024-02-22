@@ -10,7 +10,7 @@ from utilities import Vec2
 
 pygame.init()
 
-def end_lvl(gen_:Generator, gameManager_, player_):
+def end_lvl(gen_, gameManager_, player_):
     gen_.generate()
     gameManager_.spawn_mob(renderer.get_rect_list(gen.the_map))
     gameManager_.create_chest()
